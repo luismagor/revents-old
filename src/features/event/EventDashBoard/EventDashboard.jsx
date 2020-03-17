@@ -55,7 +55,7 @@ const eventsFromDashboard = [
   },
 ];
 
-export class EventsDashboard extends Component {
+export class EventDashboard extends Component {
   state = {
     events: eventsFromDashboard,
     isOpen: false,
@@ -150,4 +150,4 @@ export class EventsDashboard extends Component {
   }
 }
 
-export default EventsDashboard;
+export default EventDashboard;
