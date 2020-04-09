@@ -36,7 +36,7 @@ export class EventListItem extends Component {
           </List>
         </Segment>
         <Segment clearing>
-          <span>{event.description}</span>
+          <div style={{ marginBottom: '10px' }}>{event.description}</div>
           <Button
             onClick={() => deleteEvent(event.id)}
             as="a"
