@@ -2,20 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7b420ac-f1b4-467f-be9b-a7727a7fcbc8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/data/mockApi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/data/sampleData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/layout/LoadingComponent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/event/EventActivity/EventActivity.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/data/sampleData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data/sampleData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/reducers/rootReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/configureStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/authActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/authActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/event/EventDashBoard/EventDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/event/EventDashBoard/EventDashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/event/EventDetailed/EventDetailedHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/event/EventDetailed/EventDetailedHeader.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/event/EventDetailed/EventDetailedInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/event/EventDetailed/EventDetailedInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/event/EventForm/EventForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/event/EventForm/EventForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/event/EventList/EventListItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/event/EventList/EventListItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/event/eventActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/event/eventActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/event/eventConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/event/eventConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/event/eventReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/event/eventReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/nav/NavBar/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/nav/NavBar/NavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/testarea/TestComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/testarea/TestComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/testarea/testActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/testarea/testActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +57,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
     <property name="run.prettier.on.save" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
   <component name="RunManager">
     <configuration name="NPM START" type="js.build_tools.npm">
@@ -84,7 +82,9 @@
       <option name="presentableId" value="Default" />
       <updated>1586336863899</updated>
       <workItem from="1586337081103" duration="255000" />
-      <workItem from="1586418616191" duration="2419000" />
+      <workItem from="1586418616191" duration="2584000" />
+      <workItem from="1586423659621" duration="782000" />
+      <workItem from="1586444796765" duration="3445000" />
     </task>
     <servers />
   </component>
@@ -96,37 +96,37 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="159" y="234" width="732" height="637" key="#Inspections/67.27.1853.1053@67.27.1853.1053" timestamp="1586419604071" />
-    <state x="510" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586419059918">
+    <state x="510" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586446106472">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="510" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586419059918" />
+    <state x="510" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586446106472" />
     <state x="634" y="323" width="424" height="484" key="FileChooserDialogImpl" timestamp="1586418700995">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="634" y="323" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1586418700995" />
-    <state width="906" height="271" key="GridCell.Tab.0.bottom" timestamp="1586420330875">
+    <state width="906" height="270" key="GridCell.Tab.0.bottom" timestamp="1586445427213">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="906" height="271" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1586420330875" />
-    <state width="906" height="271" key="GridCell.Tab.0.center" timestamp="1586420330874">
+    <state width="906" height="270" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1586445427213" />
+    <state width="906" height="270" key="GridCell.Tab.0.center" timestamp="1586445427211">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="906" height="271" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1586420330874" />
-    <state width="906" height="271" key="GridCell.Tab.0.left" timestamp="1586420330873">
+    <state width="906" height="270" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1586445427211" />
+    <state width="906" height="270" key="GridCell.Tab.0.left" timestamp="1586445427210">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="906" height="271" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1586420330873" />
-    <state width="906" height="271" key="GridCell.Tab.0.right" timestamp="1586420330875">
+    <state width="906" height="270" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1586445427210" />
+    <state width="906" height="270" key="GridCell.Tab.0.right" timestamp="1586445427212">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="906" height="271" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1586420330875" />
-    <state x="363" y="200" key="SettingsEditor" timestamp="1586418930016">
+    <state width="906" height="270" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1586445427212" />
+    <state x="122" y="225" key="SettingsEditor" timestamp="1586445579462">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="363" y="200" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1586418930016" />
-    <state x="193" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1586420957847">
+    <state x="122" y="225" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1586445579462" />
+    <state x="193" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1586448230213">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="193" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1586420957847" />
+    <state x="193" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1586448230213" />
   </component>
 </project>

@@ -50,7 +50,9 @@ export class EventForm extends Component {
 
   onFormSubmit = values => {
     values.venueLatLng = this.state.venueLatLng;
-    values.date = format(values.date, 'dd LLL yyyy h:mm a');
+    if (values.date instanceof Date) {
+      values.date = format(values.date, 'dd LLL yyyy h:mm a');
+    }
     if (this.props.initialValues.id) {
       this.props.updateEvent(values);
       this.props.history.push(`/events/${this.props.initialValues.id}`);
