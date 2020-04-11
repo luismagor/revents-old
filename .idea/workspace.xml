@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7b420ac-f1b4-467f-be9b-a7727a7fcbc8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/features/event/EventActivity/EventActivity.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/config/firebase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/data/sampleData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/data/sampleData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/reducers/rootReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/configureStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/event/EventDashBoard/EventDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/event/EventDashBoard/EventDashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/event/EventDetailed/EventDetailedHeader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/event/EventDetailed/EventDetailedHeader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/event/EventDetailed/EventDetailedInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/event/EventDetailed/EventDetailedInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/event/EventForm/EventForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/event/EventForm/EventForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/event/EventList/EventList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/event/EventList/EventList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/event/EventList/EventListItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/event/EventList/EventListItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/event/eventActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/event/eventActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,14 +79,32 @@
       <workItem from="1586337081103" duration="255000" />
       <workItem from="1586418616191" duration="2584000" />
       <workItem from="1586423659621" duration="782000" />
-      <workItem from="1586444796765" duration="3445000" />
+      <workItem from="1586444796765" duration="3965000" />
+      <workItem from="1586457422207" duration="7000" />
+      <workItem from="1586618256058" duration="8269000" />
     </task>
+    <task id="LOCAL-00001" summary="end of section 13">
+      <created>1586448588210</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586448588210</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="end of section 13" />
+    <option name="LAST_COMMIT_MESSAGE" value="end of section 13" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="287" y="206" width="800" height="677" key="#Deployment" timestamp="1586448538567">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="287" y="206" width="800" height="677" key="#Deployment/67.27.1853.1053@67.27.1853.1053" timestamp="1586448538567" />
     <state x="159" y="234" width="732" height="637" key="#Inspections" timestamp="1586419604071">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -100,33 +113,45 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="510" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586446106472" />
+    <state x="315" y="31" width="754" height="1028" key="CommitChangelistDialog2" timestamp="1586448587721">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="315" y="31" width="754" height="1028" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1586448587721" />
     <state x="634" y="323" width="424" height="484" key="FileChooserDialogImpl" timestamp="1586418700995">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="634" y="323" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1586418700995" />
-    <state width="906" height="270" key="GridCell.Tab.0.bottom" timestamp="1586445427213">
+    <state width="1832" height="331" key="GridCell.Tab.0.bottom" timestamp="1586630466199">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="906" height="270" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1586445427213" />
-    <state width="906" height="270" key="GridCell.Tab.0.center" timestamp="1586445427211">
+    <state width="1832" height="331" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1586630466199" />
+    <state width="1832" height="331" key="GridCell.Tab.0.center" timestamp="1586630466197">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="906" height="270" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1586445427211" />
-    <state width="906" height="270" key="GridCell.Tab.0.left" timestamp="1586445427210">
+    <state width="1832" height="331" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1586630466197" />
+    <state width="1832" height="331" key="GridCell.Tab.0.left" timestamp="1586630466196">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="906" height="270" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1586445427210" />
-    <state width="906" height="270" key="GridCell.Tab.0.right" timestamp="1586445427212">
+    <state width="1832" height="331" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1586630466196" />
+    <state width="1832" height="331" key="GridCell.Tab.0.right" timestamp="1586630466198">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="906" height="270" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1586445427212" />
+    <state width="1832" height="331" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1586630466198" />
     <state x="122" y="225" key="SettingsEditor" timestamp="1586445579462">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="122" y="225" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1586445579462" />
-    <state x="193" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1586448230213">
+    <state x="434" y="232" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1586448602789">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="193" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1586448230213" />
+    <state x="434" y="232" width="800" height="536" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1586448602789" />
+    <state x="238" y="294" width="585" height="516" key="find.popup" timestamp="1586626398952">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="238" y="294" width="585" height="516" key="find.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1586626398952" />
+    <state x="193" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1586629967890">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="193" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1586629967890" />
   </component>
 </project>

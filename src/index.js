@@ -10,22 +10,38 @@ import ReduxToastr from 'react-redux-toastr';
 
 import { configureStore } from './app/store/configureStore';
 import ScrollToTop from './app/common/util/ScrollToTop';
-import { loadEvents } from './features/event/eventActions';
+import firebase from './app/config/firebase';
+import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
+import { createFirestoreInstance } from 'redux-firestore';
 
 const store = configureStore();
-store.dispatch(loadEvents());
+
+const rrfConfig = {
+  userProfile: 'users',
+  attachAuthIsReady: true,
+  useFirestoreForProfile: true,
+};
+
+const rrfProps = {
+  firebase,
+  config: rrfConfig,
+  dispatch: store.dispatch,
+  createFirestoreInstance,
+};
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
-      <ScrollToTop />
-      <ReduxToastr
-        position="bottom-right"
-        transitionIn="fadeIn"
-        transitionOut="fadeOut"
-      />
-      <App />
-    </BrowserRouter>
+    <ReactReduxFirebaseProvider {...rrfProps}>
+      <BrowserRouter>
+        <ScrollToTop />
+        <ReduxToastr
+          position="bottom-right"
+          transitionIn="fadeIn"
+          transitionOut="fadeOut"
+        />
+        <App />
+      </BrowserRouter>
+    </ReactReduxFirebaseProvider>
   </Provider>,
   document.getElementById('root')
 );

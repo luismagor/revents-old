@@ -7,13 +7,14 @@ export class EventList extends Component {
 
     return (
       <Fragment>
-        {events.map(event => (
-          <EventListItem
-            key={event.id}
-            event={event}
-            deleteEvent={deleteEvent}
-          />
-        ))}
+        {events &&
+          events.map(event => (
+            <EventListItem
+              key={event.id}
+              event={event}
+              deleteEvent={deleteEvent}
+            />
+          ))}
       </Fragment>
     );
   }
