@@ -5,14 +5,15 @@ import './index.css';
 import App from './app/layout/App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
+import { Provider, useSelector } from 'react-redux';
 import ReduxToastr from 'react-redux-toastr';
 
 import { configureStore } from './app/store/configureStore';
 import ScrollToTop from './app/common/util/ScrollToTop';
 import firebase from './app/config/firebase';
-import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
+import { isLoaded, ReactReduxFirebaseProvider } from 'react-redux-firebase';
 import { createFirestoreInstance } from 'redux-firestore';
+import LoadingComponent from './app/layout/LoadingComponent';
 
 const store = configureStore();
 
@@ -20,6 +21,7 @@ const rrfConfig = {
   userProfile: 'users',
   attachAuthIsReady: true,
   useFirestoreForProfile: true,
+  updateProfileOnLogin: false,
 };
 
 const rrfProps = {
@@ -29,17 +31,25 @@ const rrfProps = {
   createFirestoreInstance,
 };
 
+function AuthIsLoaded({ children }) {
+  const auth = useSelector(state => state.firebase.auth);
+  if (!isLoaded(auth)) return <LoadingComponent />;
+  return children;
+}
+
 ReactDOM.render(
   <Provider store={store}>
     <ReactReduxFirebaseProvider {...rrfProps}>
       <BrowserRouter>
-        <ScrollToTop />
-        <ReduxToastr
-          position="bottom-right"
-          transitionIn="fadeIn"
-          transitionOut="fadeOut"
-        />
-        <App />
+        <AuthIsLoaded>
+          <ScrollToTop />
+          <ReduxToastr
+            position="bottom-right"
+            transitionIn="fadeIn"
+            transitionOut="fadeOut"
+          />
+          <App />
+        </AuthIsLoaded>
       </BrowserRouter>
     </ReactReduxFirebaseProvider>
   </Provider>,
