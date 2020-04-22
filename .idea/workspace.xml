@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7b420ac-f1b4-467f-be9b-a7727a7fcbc8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/features/auth/SocialLogin/SocialLogin.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/common/form/RadioInput.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/user/userActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/store/configureStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store/configureStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/Login/LoginForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/Login/LoginForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/Register/RegisterForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/Register/RegisterForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/auth/authActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/authActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/nav/Menus/SignedInMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/nav/Menus/SignedInMenu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/nav/NavBar/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/nav/NavBar/NavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/user/Settings/AccountPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/user/Settings/AccountPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/common/form/DateInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/common/form/DateInput.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/user/Settings/AboutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/user/Settings/AboutPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/user/Settings/BasicPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/user/Settings/BasicPage.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/user/Settings/SettingsDashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/user/Settings/SettingsDashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +55,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="/usr/local/lib/node_modules/prettier" />
     <property name="run.prettier.on.save" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RunManager">
     <configuration name="NPM START" type="js.build_tools.npm">
@@ -96,7 +92,10 @@
       <workItem from="1587119444280" duration="5122000" />
       <workItem from="1587127200636" duration="805000" />
       <workItem from="1587239953242" duration="2537000" />
-      <workItem from="1587304943418" duration="8038000" />
+      <workItem from="1587304943418" duration="8252000" />
+      <workItem from="1587382315601" duration="611000" />
+      <workItem from="1587470957932" duration="282000" />
+      <workItem from="1587572702580" duration="6747000" />
     </task>
     <task id="LOCAL-00001" summary="end of section 13">
       <created>1586448588210</created>
@@ -112,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586630733835</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="end of section 15">
+      <created>1587315367300</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587315367300</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +127,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="end of section 13" />
     <MESSAGE value="end of section 14" />
-    <option name="LAST_COMMIT_MESSAGE" value="end of section 14" />
+    <MESSAGE value="end of section 15" />
+    <option name="LAST_COMMIT_MESSAGE" value="end of section 15" />
   </component>
   <component name="WindowStateProjectService">
     <state x="287" y="206" width="800" height="677" key="#Deployment" timestamp="1586448538567">
@@ -132,42 +139,46 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="159" y="234" width="732" height="637" key="#Inspections/67.27.1853.1053@67.27.1853.1053" timestamp="1587305168096" />
+    <state x="330" y="377" width="551" height="425" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1587575548414">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="330" y="377" width="551" height="425" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1587575548414" />
     <state x="510" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586446106472">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="510" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1586446106472" />
-    <state x="315" y="31" width="754" height="1028" key="CommitChangelistDialog2" timestamp="1586630733455">
+    <state x="315" y="31" width="754" height="1028" key="CommitChangelistDialog2" timestamp="1587315366837">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="315" y="31" width="754" height="1028" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1586630733455" />
+    <state x="315" y="31" width="754" height="1028" key="CommitChangelistDialog2/67.27.1853.1053@67.27.1853.1053" timestamp="1587315366837" />
     <state x="634" y="323" width="424" height="484" key="FileChooserDialogImpl" timestamp="1586418700995">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="634" y="323" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1586418700995" />
-    <state width="906" height="173" key="GridCell.Tab.0.bottom" timestamp="1587307443450">
+    <state width="906" height="173" key="GridCell.Tab.0.bottom" timestamp="1587315422793">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="906" height="173" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1587307443450" />
-    <state width="906" height="173" key="GridCell.Tab.0.center" timestamp="1587307443448">
+    <state width="906" height="173" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1587315422793" />
+    <state width="906" height="173" key="GridCell.Tab.0.center" timestamp="1587315422790">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="906" height="173" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1587307443448" />
-    <state width="906" height="173" key="GridCell.Tab.0.left" timestamp="1587307443446">
+    <state width="906" height="173" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1587315422790" />
+    <state width="906" height="173" key="GridCell.Tab.0.left" timestamp="1587315422789">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="906" height="173" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1587307443446" />
-    <state width="906" height="173" key="GridCell.Tab.0.right" timestamp="1587307443449">
+    <state width="906" height="173" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1587315422789" />
+    <state width="906" height="173" key="GridCell.Tab.0.right" timestamp="1587315422790">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="906" height="173" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1587307443449" />
-    <state x="122" y="225" key="SettingsEditor" timestamp="1587068229329">
+    <state width="906" height="173" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1587315422790" />
+    <state x="122" y="225" key="SettingsEditor" timestamp="1587575550255">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="122" y="225" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1587068229329" />
-    <state x="434" y="232" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1586630737272">
+    <state x="122" y="225" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1587575550255" />
+    <state x="434" y="232" width="800" height="536" key="Vcs.Push.Dialog.v2" timestamp="1587315373784">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="434" y="232" width="800" height="536" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1586630737272" />
+    <state x="434" y="232" width="800" height="536" key="Vcs.Push.Dialog.v2/67.27.1853.1053@67.27.1853.1053" timestamp="1587315373784" />
     <state x="238" y="294" width="585" height="516" key="find.popup" timestamp="1586626398952">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
