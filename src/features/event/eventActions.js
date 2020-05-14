@@ -65,7 +65,7 @@ export const cancelToggle = (cancelled, eventId) => async (
 };
 
 export const getEventsForDashboard = lastEvent => async dispatch => {
-  const today = new Date();
+  // const today = new Date();
   const firestore = firebase.firestore();
   const eventsRef = firestore.collection('events');
   try {
@@ -107,5 +107,29 @@ export const getEventsForDashboard = lastEvent => async dispatch => {
   } catch (error) {
     console.log(error);
     dispatch(asyncActionError());
+  }
+};
+
+export const addEventComment = (eventId, values, parentId) => async (
+  dispatch,
+  getState,
+  { getFirebase }
+) => {
+  const firebase = getFirebase();
+  const profile = getState().firebase.profile;
+  const user = firebase.auth().currentUser;
+  const newComment = {
+    parentId,
+    displayName: profile.displayName,
+    photoURL: profile.photoURL || '/assets/user.png',
+    uid: user.uid,
+    text: values.comment,
+    date: Date.now(),
+  };
+  try {
+    await firebase.push(`event_chat/${eventId}`, newComment);
+  } catch (error) {
+    console.log(error);
+    toastr.error('Oops', 'Problem adding comment');
   }
 };
