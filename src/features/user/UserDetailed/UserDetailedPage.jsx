@@ -14,8 +14,7 @@ import { getUserEvents } from '../userActions';
 
 class UserDetailedPage extends Component {
   async componentDidMount() {
-    const events = await this.props.getUserEvents(this.props.userUid);
-    console.log(events);
+    await this.props.getUserEvents(this.props.userUid);
   }
 
   changeTab = (e, data) => {

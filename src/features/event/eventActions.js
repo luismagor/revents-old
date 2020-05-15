@@ -65,7 +65,7 @@ export const cancelToggle = (cancelled, eventId) => async (
 };
 
 export const getEventsForDashboard = lastEvent => async dispatch => {
-  // const today = new Date();
+  const today = new Date();
   const firestore = firebase.firestore();
   const eventsRef = firestore.collection('events');
   try {
@@ -77,14 +77,11 @@ export const getEventsForDashboard = lastEvent => async dispatch => {
     let query;
     lastEvent
       ? (query = eventsRef
-          // .where('date', '>=', today)
+          .where('date', '>=', today)
           .orderBy('date')
           .startAfter(startAfter)
           .limit(2))
-      : (query = eventsRef
-          // .where('date', '>=', today)
-          .orderBy('date')
-          .limit(2));
+      : (query = eventsRef.where('date', '>=', today).orderBy('date').limit(2));
     const querySnapshot = await query.get();
 
     if (querySnapshot.docs.length === 0) {
