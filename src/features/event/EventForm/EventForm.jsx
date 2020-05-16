@@ -64,7 +64,7 @@ export class EventForm extends Component {
         if (Object.keys(values.venueLatLng).length === 0) {
           values.venueLatLng = this.props.event.venueLatLng;
         }
-        this.props.updateEvent(values);
+        await this.props.updateEvent(values);
         this.props.history.push(`/events/${this.props.initialValues.id}`);
       } else {
         const createdEvent = await this.props.createEvent(values);
@@ -110,6 +110,7 @@ export class EventForm extends Component {
       pristine,
       event,
       cancelToggle,
+      loading,
     } = this.props;
 
     return (
@@ -165,6 +166,7 @@ export class EventForm extends Component {
               />
               <Button
                 disabled={invalid || submitting || pristine}
+                loading={loading}
                 positive
                 type="submit"
               >
@@ -177,6 +179,7 @@ export class EventForm extends Component {
                     : () => history.push('/events')
                 }
                 type="button"
+                disabled={loading}
               >
                 Cancel
               </Button>
@@ -212,6 +215,7 @@ const mapStateToProps = (state, ownProps) => {
   return {
     initialValues: event,
     event,
+    loading: state.async.loading,
   };
 };
 

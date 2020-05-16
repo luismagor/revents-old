@@ -32,12 +32,45 @@ export const createEvent = event => {
 };
 
 export const updateEvent = event => {
-  return async (dispatch, getState, { getFirestore }) => {
-    const firestore = getFirestore();
+  return async (dispatch, getState) => {
+    const firestore = firebase.firestore();
     try {
-      await firestore.update(`events/${event.id}`, event);
+      dispatch(asyncActionStart());
+      const eventDocRef = firestore.collection('events').doc(event.id);
+      const dateEqual = getState().firestore.ordered.events[0].date.isEqual(
+        event.date
+      );
+      if (!dateEqual) {
+        const batch = firestore.batch();
+        batch.update(eventDocRef, event);
+
+        const eventAttendeeRef = firestore.collection('event_attendee');
+        const eventAttendeeQuery = await eventAttendeeRef.where(
+          'eventId',
+          '==',
+          event.id
+        );
+        const eventAttendeeQuerySnapshot = await eventAttendeeQuery.get();
+
+        for (let i = 0; i < eventAttendeeQuerySnapshot.docs.length; i++) {
+          const eventAttendeeDocRef = await firestore
+            .collection('event_attendee')
+            .doc(eventAttendeeQuerySnapshot.docs[i].id);
+
+          batch.update(eventAttendeeDocRef, {
+            eventDate: event.date,
+          });
+        }
+
+        await batch.commit();
+      } else {
+        await eventDocRef.update(event);
+      }
+      dispatch(asyncActionFinish());
       toastr.success('Success!', 'Event has been updated');
     } catch (error) {
+      dispatch(asyncActionError());
+      console.log(error);
       toastr.error('Oops', 'Something went wrong');
     }
   };
