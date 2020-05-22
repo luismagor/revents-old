@@ -14,6 +14,8 @@ import { cancelGoingToEvent, goingToEvent } from '../../user/userActions';
 import { compose } from 'redux';
 import { addEventComment } from '../eventActions';
 import { openModal } from '../../modals/modalActions';
+import LoadingComponent from '../../../app/layout/LoadingComponent';
+import NotFound from '../../../app/layout/NotFound';
 
 class EventDetailedPage extends Component {
   async componentDidMount() {
@@ -36,13 +38,26 @@ class EventDetailedPage extends Component {
       cancelGoingToEvent,
       addEventComment,
       eventChat,
+      requesting,
+      match,
     } = this.props;
     const attendees =
-      event && event.attendees && objectToArray(event.attendees);
+      event &&
+      event.attendees &&
+      objectToArray(event.attendees).sort(
+        (a, b) => a.joinDate.toDate() - b.joinDate.toDate()
+      );
     const isHost = event && event.hostUid === auth.uid;
     const isGoing = attendees && attendees.some(a => a.id === auth.uid);
     const chatTree = !isEmpty(eventChat) && createDataTree(eventChat);
     const authenticated = auth.isLoaded && !auth.isEmpty;
+    const loadingEvent = requesting[`events/${match.params.id}`];
+
+    if (loadingEvent) {
+      return <LoadingComponent />;
+    }
+    if (Object.keys(event).length === 0) return <NotFound />;
+
     return (
       <Grid>
         <Grid.Column width={10}>
@@ -89,6 +104,7 @@ const mapStateToProps = (state, ownProps) => {
 
   return {
     event,
+    requesting: state.firestore.status.requesting,
     auth: state.firebase.auth,
     loading: state.async.loading,
     eventChat:

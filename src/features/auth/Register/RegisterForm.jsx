@@ -49,6 +49,7 @@ const RegisterForm = ({
           )}
           <Button
             disabled={invalid || submitting}
+            loading={submitting}
             fluid
             size="large"
             color="teal"
